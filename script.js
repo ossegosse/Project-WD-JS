@@ -11,3 +11,7 @@
 
 const url = "https://fathomless-shelf-54969.herokuapp.com/"
 
+let resp = await fetch('https://fathomless-shelf-54969.herokuapp.com/bodies', {
+    method: 'GET',
+    headers: {'x-zocom': '<solaris-key-here>'}
+})
