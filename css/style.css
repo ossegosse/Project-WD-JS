@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#0C164D, #190B22);
+    min-height: 100vh;
+}
+
+#header-title {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 4rem;
+    padding-top: 4rem;
+}
+
+#header-title > h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+}
+
+#header-title > h2 {
+    color: #FFD029;
+    font-size: 24px;
+}
+
+#main-content, #planets {
+    display: flex;
+}
+
+#main-content > #planets {
+    align-items: center;
+    justify-items: space-evenly;
+    gap: 6rem;
+}
+
+.planet {
+    border-radius: 50%;
+}
+
+/* fixa med position! */
+#sun {
+    width: 600px;
+    height: 600px;
+    background: #FFD029;
+    border-radius: 50%;
+    position: relative; 
+    left: -470px;
+    overflow: hidden;
+    
+}
+
+#mercury {
+    width: 14px;
+    height: 14px;
+    background: #888888;
+}
+
+#venus {
+    width: 26px;
+    height: 26px;
+    background: #E7CDCD;
+}
+
+#earth {
+    width: 28px;
+    height: 28px;
+    background: #428ED4;
+}
+
+#mars {
+    width: 14px;
+    height: 14px;
+    background: #EF5F5F;
+}
+
+#jupiter {
+    width: 188px;
+    height: 188px;
+    background: #E29468;
+}
+
+#saturn {
+    width: 144px;
+    height: 144px;
+    background: #C7AA72;
+}
+
+#uranus {
+    width: 66px;
+    height: 66px;
+    background: #C9D4F1;
+}
+
+#neptune {
+    width: 66px;
+    height: 66px;
+    background: #7A91A7;
+}
