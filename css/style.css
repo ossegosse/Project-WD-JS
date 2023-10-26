@@ -33,7 +33,7 @@ body {
 
 #main-content > #planets {
     align-items: center;
-    justify-items: space-evenly;
+        
     gap: 6rem;
 }
 
