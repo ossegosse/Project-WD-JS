@@ -4,31 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Examinationsuppgift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header id="header-title">
       <h1>SOLSYSTEMET</h1>
       <h2>SOLARIS</h2>
     </header>
 
-    <main id="main-content">
-      <div id="sun"></div>
+    <main id="planets">
+      <div class="sun"></div>
 
-      <div id="planets">
-        <div class="planet" id="mercury"></div>
-        <div class="planet" id="venus"></div>
-        <div class="planet" id="earth"></div>
-        <div class="planet" id="mars"></div>
-        <div class="planet" id="jupiter"></div>
-        <div class="planet" id="saturn"></div>
-        <div class="planet" id="uranus"></div>
-        <div class="planet" id="neptune"></div>
-      </div>
-      
-      <!--- overlay för när man klickar på planeter -->
-      <div id="overlay"></div>
+      <img id="mercury" src="./img/Ellipse 2.svg" />
+
+      <img id="venus" src="./img/Ellipse 3.svg" />
+
+      <img id="earth" src="./img/Ellipse 4.svg" />
+
+      <img id="mars" src="./img/Ellipse 5.svg" />
+
+      <img id="jupiter" src="./img/Ellipse 6.svg" />
+
+      <img id="saturn" src="./img/Ellipse 10.svg" />
+
+      <img id="uranus" src="./img/Ellipse 8.svg" />
+
+      <img id="neptune" src="./img/Ellipse 9.svg" />
     </main>
+
+    <!--- overlay for when you click the planets -->
+    <div id="overlay">
+      <div id="container">
+        <div id="planetColor"></div>
+
+        <!--- divs to insert the API data --->
+        <div id="dataContainer">
+          <section class="firstSection">
+            <div id="planetName"></div>
+            <div id="planetLatin"></div>
+          </section>
+
+          <section class="secondSection">
+            <div id="planetText"></div>
+          </section>
+
+          <section class="thirdSection">
+            <h3>OMKRETS</h3>
+            <div id="planetSize"></div>
+            <br>
+            <h3>KM FRÅN SOLEN</h3>
+            <div id="planetLengthFromSun"></div>
+          </section>
+
+          <section class="fourthSection">
+            <h3>MAX TEMPERATUR</h3>
+            <div id="planetMaxTemp"></div>
+            <br>
+            <h3>MIN TEMPERATUR</h3>
+            <div id="planetMinTemp"></div>
+          </section>
+        </div>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
